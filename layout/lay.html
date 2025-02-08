@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: grid;
+            gap: 20px;
+            grid-template-columns: auto auto auto;
+            grid-template-rows: auto auto auto auto auto;
+            grid-template-areas: 
+            "H H H"
+            "N N N"
+            "A A Sn"
+            "As As Sn"
+            "F F F";
+
+        
+        }
+        .container>div{
+            background: lightgray;
+            padding:30px;
+        
+        }
+        .child1{
+            grid-area:H;
+        }
+        .child2{
+            grid-area:N;
+        }
+        .child3{
+            grid-area:Sn;
+        }
+        .child4{
+            grid-area:A;
+        }
+        .child5{
+            grid-area:As;
+        
+        }
+        .child7{
+            grid-area:F;
+            
+        }
+        @media screen and (width<576px){
+            body{
+                background:grey;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="child1">Header</div>
+        <div class="child2">Nav</div>
+        <div class="child3">Section</div>
+        <div class="child4">Article</div>
+        <div class="child5">Aside</div>
+        <div class="child7">Footer</div>
+    </div>
+</body>
+</html>
